@@ -29,28 +29,31 @@ return $c;
 }
 
 	$n1 = 8;
- 	$n2 = 5;
- 	$op = 2;
+ 	$n2 = 4;
+ 	$op = array ("+", "-", "*", "/");
+
+ 	echo "A escolha do operador no array";
+
+ 	foreach ($op as $ops) {
+	echo "<br/>".$ops;
+}
+
 
  	switch ($op) {
-	case 1:
+	case "+":
 		$res = somarvalor($n1,$n2);
 		
 		break;
-	case 2:
+	case "-":
 		$res = subtrairvalor($n1,$n2);
 
 		break;
-	case 3: 
+	case "*": 
 		 $res = multiplicarvalor($n1,$n2);
 
 		break;
-	case 4: 
-		if ($n2 == 0) {
-			echo "É impossível dividir por 0";
-		} else {
+	case "/": 
 		 $res = dividirvalor($n1,$n2);
-		}
 
 		
 	
@@ -62,9 +65,7 @@ return $c;
 		break;
 	}
 
-	
 	echo "<br> O resultado do cálculo é: $res";
 	
-
 	
  ?>

@@ -6,17 +6,17 @@
 	<title>Arrays</title>
 </head>
 <style type="text/css">
-	body {
+	h2{
 		background-color: pink;
+		width: 900px;
 	}
-	
 
 
 </style>
 <body>
 
-
-<h1>Array Unshift</h1>
+<h1>Arrays:</h1>
+<h2>Array Unshift</h1>
 
 <?php 
 
@@ -35,7 +35,7 @@ foreach ($nomes as $item) {
 
 <br>
 
-<h1>Array Push</h1>
+<h2>Array Push</h2>
 
 <?php 
 
@@ -50,7 +50,7 @@ foreach ($nomes as $item) {
 
  <br>
 
- <h1>Array Shift</h1>
+ <h2>Array Shift</h2>
 
 <?php 
 	$nomes = array("Maria","José","Pedro");
@@ -66,7 +66,7 @@ foreach ($nomes as $item) {
 
 <br>
 
-<h1>Array Pop</h1>
+<h2>Array Pop</h2>
 
  <?php 
  	$nomes = array("Maria","José", "Pedro");
@@ -82,7 +82,7 @@ foreach ($nomes as $item) {
 
 <br>
 
-<h1>Array Key Exists</h1>
+<h2>Array Key Exists</h2>
 
  <?php 
   $nomes = array("MA" => "Maria", "ZE" => "José", "PE" => "Pedro", "AN" => "Ana");
@@ -96,7 +96,7 @@ foreach ($nomes as $item) {
 
  <br>
 
- <h1>Array Search</h1>
+ <h2>Array Search</h2>
 
 <?php
 
@@ -111,7 +111,7 @@ echo "<br/> Chave de busca realizada: ".$chave;
 
 <br>
 
-<h1>Array Keys</h1>
+<h2>Array Keys</h2>
 
 <?php 
 
@@ -131,7 +131,21 @@ print_r($chaves);
 
 
  ?>
+ <br>
+ <h2>Movendo o ponteiro de um array</h2>
+<?php 
 
+$nomes = array("MA" => "Maria","ZE" => "José","PE" => "Pedro", "AN" => "Ana");
+
+echo "<br/> Next: ".next($nomes);
+echo "<br/> End: ".end($nomes);
+echo "<br/> Prev: ".prev($nomes);
+echo "<br/> Reset: ".reset($nomes);
+
+
+
+ ?>
+ 
 
 
 

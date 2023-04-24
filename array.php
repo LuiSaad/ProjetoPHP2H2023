@@ -46,3 +46,12 @@ for ($linha = 0; $linha < 3; $linha++){
 
 
 ?>
+<br>
+<?php 
+ 
+ $arr = array('v' => 'Vermelho', 'v' => 'Verde', 'a' =>
+ 	array('azul','marrom','preto'));
+
+ 	echo json_encode($arr);
+
+ ?>
